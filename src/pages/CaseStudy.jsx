@@ -66,7 +66,14 @@ export default function CaseStudy({ project, onBack, onSelectProject, onNavigate
         </div>
 
         {/* Hero Cover Mockup */}
-        <div className="case-hero-image-wrap">
+        <div
+          className="case-hero-image-wrap"
+          onClick={() => setLightboxImg({
+            src: activeProject.image,
+            fallback: activeProject.fallbackImage,
+            title: `${activeProject.title} Hero Mockup`
+          })}
+        >
           <img
             src={activeProject.image}
             onError={(e) => {
