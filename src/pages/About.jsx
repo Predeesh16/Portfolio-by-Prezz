@@ -30,7 +30,7 @@ export default function About({ onNavigate }) {
           <div className="stats-grid">
             <div className="stat-card">
               <span className="stat-label">.experience</span>
-              <span className="stat-value">02 years</span>
+              <span className="stat-value">01 year</span>
             </div>
             <div className="stat-card">
               <span className="stat-label">.location</span>

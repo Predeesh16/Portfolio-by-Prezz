@@ -566,6 +566,18 @@ button {
   color: rgba(179, 255, 203, 0.8);
 }
 
+.card-theme-lime {
+  background-color: #88e734;
+  color: #0b1706;
+}
+.card-theme-lime .stack-card-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.card-theme-lime .card-year,
+.card-theme-lime .card-category {
+  color: rgba(11, 23, 6, 0.85);
+}
+
 /* About Preview Section */
 .about-preview-section {
   padding: 120px 0;
@@ -1356,6 +1368,31 @@ button {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
+/* Lime Theme (College Student Portal) */
+.see-also-card.card-theme-lime {
+  background-color: #88e734;
+  color: #0b1706;
+  box-shadow: 0 10px 30px rgba(136, 231, 52, 0.25);
+  border: 1px solid rgba(136, 231, 52, 0.3);
+}
+.see-also-card.card-theme-lime .see-also-meta {
+  color: rgba(11, 23, 6, 0.75);
+}
+.see-also-card.card-theme-lime .see-also-title {
+  color: #0b1706;
+}
+.see-also-card.card-theme-lime .see-also-btn {
+  border: 1px solid rgba(11, 23, 6, 0.4);
+  color: #0b1706;
+}
+.see-also-card.card-theme-lime:hover .see-also-btn,
+.see-also-card.card-theme-lime .see-also-btn:hover {
+  background-color: #0b1706;
+  color: #88e734;
+  border-color: #0b1706;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
 /* ==========================================================================
    Smooth Page Transitions & Workflow Enhancements
    ========================================================================== */
@@ -1457,6 +1494,9 @@ html {
   background: #0d0d0d;
   cursor: zoom-in;
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .case-gallery-item:hover {
@@ -1466,8 +1506,11 @@ html {
 }
 
 .case-gallery-item img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: 820px;
   display: block;
+  object-fit: contain;
 }
 
 .gallery-zoom-badge {

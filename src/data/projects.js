@@ -152,5 +152,72 @@ Users need a music experience where they can quickly discover songs, manage thei
         caption: 'Displays the user’s profile, followers, following, bio, and shared content in one place.'
       }
     ]
+  },
+  {
+    id: 'student-portal',
+    slug: 'college-student-portal',
+    title: 'College Student Portal',
+    year: '2026',
+    category: 'UI/UX Design',
+    theme: 'card-theme-lime',
+    bgColor: '#88e734',
+    textColor: '#0b1706',
+    arrowSymbol: '→',
+    image: './assets/studentportal.png',
+    fallbackImage: './assets/studentportal.png',
+    shortDescription: 'Designed a user-friendly college student portal interface in Figma, focusing on intuitive navigation, organized layouts, and an improved student experience.',
+    timeframe: '3 weeks',
+    tools: 'Figma',
+    problem: `College students often struggle with fragmented academic systems where timetables, attendance percentages, fee payments, and announcements are scattered across outdated portals or physical notice boards.
+
+Traditional campus portals suffer from cluttered desktop-first layouts, sluggish navigation, lack of mobile responsiveness, and confusing interfaces that make tracking daily classes, attendance shortages, and urgent fee deadlines unnecessarily stressful.`,
+    solution: `Designed a sleek, dark-themed mobile-first College Student Portal in Figma that unifies daily campus life into an intuitive, centralized mobile app.
+
+The portal provides students with real-time class tracking, live 'in session' lecture countdowns, interactive timetables, proactive attendance analytics with smart 75% cutoff warnings, one-tap fee settlement via UPI, and frictionless SSO authentication—empowering students to manage their academic journey effortlessly.`,
+    storyTitle: 'Campus life moves fast — the digital tools students rely on should be just as dynamic, clear, and effortless. 🎓⚡',
+    story: [
+      'As university curriculums and student routines become increasingly demanding, having quick, reliable access to day-to-day academic schedules is essential.',
+      'Students frequently miss critical class updates, fall below mandatory attendance criteria without prior warning, or face penalties due to overlooked fee deadlines. Most existing campus ERP portals are cluttered and difficult to navigate on mobile devices.',
+      'The College Student Portal UI/UX project was born to redesign this student experience from the ground up: delivering a modern dark-mode aesthetic with high-visibility neon accents, clean typography, and a frictionless layout optimized for one-thumb mobile navigation.'
+    ],
+    storyImage: './assets/studentportal_story.png',
+    fallbackStoryImage: './assets/studentportal_story.png',
+    details: [
+      'College Student Portal – UI/UX Design is a high-fidelity mobile application prototype crafted in Figma. The interface is engineered with a modern dark aesthetic, featuring vibrant lime-green accents that enhance visual contrast and reduce eye strain during late-night study sessions.',
+      'The design system comprises core user flows: onboarding & secure SSO authentication, a personalized home dashboard with live class status, a horizontal daily calendar timetable with lecture room mapping, an interactive attendance tracker with 75% minimum threshold alerts, and an end-to-end fee payment breakdown with native UPI integration.',
+      'Every interaction and component adheres to ergonomic mobile design principles, establishing a unified layout grid, clear visual hierarchy, accessible touch targets, and consistent micro-interactions throughout.'
+    ],
+    gallery: [
+      {
+        src: './assets/studentportal_1.png',
+        fallback: './assets/studentportal_1.png',
+        caption: 'Onboarding & Splash Screen — Welcoming students with high-contrast typography, atmospheric green backlighting, and a fast skip-or-continue pathway.'
+      },
+      {
+        src: './assets/studentportal_2.png',
+        fallback: './assets/studentportal_2.png',
+        caption: 'Seamless Authentication — Simplified student registration offering 1-tap SSO via Google and Apple alongside institutional email authentication.'
+      },
+      {
+        src: './assets/studentportal_3.png',
+        fallback: './assets/studentportal_3.png',
+        caption: 'Central Dashboard & Live Tracker — Real-time lecture status, quick action shortcuts, circular attendance progress with 75% warning alerts, and fee due reminders.'
+      },
+      {
+        src: './assets/studentportal_4.png',
+        fallback: './assets/studentportal_4.png',
+        caption: 'Academic Timetable & Schedule — Interactive day-by-day timetable view with live session badges, instructor details, lecture rooms, lab slots, and lunch break intervals.'
+      },
+      {
+        src: './assets/studentportal_5.png',
+        fallback: './assets/studentportal_5.png',
+        caption: 'Transparent Fee Payment — Itemized semester fee breakdown (tuition, examination, library) with multi-rail cashless checkout supporting UPI, Cards, and Net Banking.'
+      },
+      {
+        src: './assets/studentportal_6.png',
+        fallback: './assets/studentportal_6.png',
+        caption: 'Student Profile & Academic Records — Complete department information, university register number, semester status, notification settings, and security controls.'
+      }
+    ]
   }
 ];
