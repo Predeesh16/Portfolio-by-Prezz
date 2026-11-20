@@ -57,6 +57,31 @@ export default function About({ onNavigate }) {
               <p style={{ color: 'var(--text-muted)', fontSize: '18px', lineHeight: '1.7', marginBottom: '32px' }}>
                 Specializing in bridging the boundary between high-impact aesthetic design and robust frontend engineering. From initial product strategy and interactive prototypes to pixel-perfect deployment with smooth transitions and spring physics.
               </p>
+
+              {/* Resume Download / View Action Bar */}
+              <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '32px' }}>
+                <a
+                  href="./Predeesh_Resume.pdf"
+                  download="Predeesh_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline"
+                >
+                  <Download size={16} />
+                  <span>download resume</span>
+                </a>
+                <a
+                  href="./Predeesh_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline"
+                  style={{ opacity: 0.85 }}
+                >
+                  <Eye size={16} />
+                  <span>view cv</span>
+                  <ArrowUpRight size={14} />
+                </a>
+              </div>
             </div>
 
             <div className="about-preview-media-col">

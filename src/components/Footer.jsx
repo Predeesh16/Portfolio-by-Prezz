@@ -38,6 +38,15 @@ export default function Footer({ onNavigate }) {
               contact
             </button>
             <a
+              href="./Predeesh_Resume.pdf"
+              download="Predeesh_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-link"
+            >
+              resume
+            </a>
+            <a
               href="https://www.instagram.com/prezz.dt"
               target="_blank"
               rel="noopener noreferrer"

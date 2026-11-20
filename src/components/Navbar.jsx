@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X } from 'lucide-react';
+import { X, Download } from 'lucide-react';
 
 export default function Navbar({ currentPage, onNavigate }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,23 +41,38 @@ export default function Navbar({ currentPage, onNavigate }) {
             .prezz
           </button>
 
-          {/* Minimalist Framer-style Menu Toggle */}
-          <button
-            className="framer-menu-btn"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label={menuOpen ? 'Close navigation' : 'Open navigation'}
-            aria-expanded={menuOpen}
-          >
-            <span className="menu-text">{menuOpen ? 'close' : 'menu'}</span>
-            {menuOpen ? (
-              <X size={18} strokeWidth={1.8} className="menu-icon-close" />
-            ) : (
-              <span className="menu-hamburger-bars" aria-hidden="true">
-                <span className="bar" />
-                <span className="bar" />
-              </span>
-            )}
-          </button>
+          {/* Actions Group */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+            <a
+              href="./Predeesh_Resume.pdf"
+              download="Predeesh_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="navbar-resume-btn"
+              title="Download Resume PDF"
+            >
+              <span>resume</span>
+              <Download size={13} />
+            </a>
+
+            {/* Minimalist Framer-style Menu Toggle */}
+            <button
+              className="framer-menu-btn"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label={menuOpen ? 'Close navigation' : 'Open navigation'}
+              aria-expanded={menuOpen}
+            >
+              <span className="menu-text">{menuOpen ? 'close' : 'menu'}</span>
+              {menuOpen ? (
+                <X size={18} strokeWidth={1.8} className="menu-icon-close" />
+              ) : (
+                <span className="menu-hamburger-bars" aria-hidden="true">
+                  <span className="bar" />
+                  <span className="bar" />
+                </span>
+              )}
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -105,6 +120,19 @@ export default function Navbar({ currentPage, onNavigate }) {
                 >
                   contact
                 </button>
+              </li>
+              <li style={{ marginTop: '12px' }}>
+                <a
+                  href="./Predeesh_Resume.pdf"
+                  download="Predeesh_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="framer-nav-link"
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', color: 'var(--text-dim)' }}
+                >
+                  <span>resume</span>
+                  <Download size={24} />
+                </a>
               </li>
             </ul>
           </div>

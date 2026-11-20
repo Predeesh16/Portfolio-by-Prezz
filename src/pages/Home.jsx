@@ -1,7 +1,7 @@
 import React from 'react';
 import StatusRow from '../components/StatusRow';
 import FloatingCard from '../components/FloatingCard';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Download } from 'lucide-react';
 import { PROJECTS_DATA } from '../data/projects';
 
 export default function Home({ onNavigate, onSelectProject }) {
@@ -64,16 +64,29 @@ export default function Home({ onNavigate, onSelectProject }) {
                 I’m a creative UI/UX designer and developer passionate about creating modern, simple, and user-friendly digital experiences with a focus on creativity, usability, and innovation.
               </p>
               
-              <button
-                className="btn-outline"
-                onClick={() => {
-                  onNavigate('about');
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
-              >
-                <span>about me</span>
-                <ArrowUpRight size={16} />
-              </button>
+              <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
+                <button
+                  className="btn-outline"
+                  onClick={() => {
+                    onNavigate('about');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                >
+                  <span>about me</span>
+                  <ArrowUpRight size={16} />
+                </button>
+
+                <a
+                  href="./Predeesh_Resume.pdf"
+                  download="Predeesh_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline"
+                >
+                  <Download size={16} />
+                  <span>resume</span>
+                </a>
+              </div>
             </div>
 
             <div className="about-preview-media-col">
